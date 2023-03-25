@@ -1,0 +1,34 @@
+body{
+    background-color: #fff;
+}
+.componentes{
+    margin-bottom: 10px;
+}
+.separacao{
+    margin: 15px 0px;
+}
+.formulario{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px 15px 15px 15px;
+    width: 650px;
+}
+.botaoLegal{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    border-radius:  5px;
+    padding: 5px;
+    font-size: 14px;
+   
+}
+.botaoLegal:hover{
+    background-color: black;
+    color: white;  
+}
+.tamanho{ !important
+    font-size: 12px; 
+    border: 1px solid black;
+}
+
+
