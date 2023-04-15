@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Matemática</title>
+</head>
+
+<body>
+
+
+    <div class="container mt-3" id="externo">
+        <div class="row">
+            <div class="form-floating col-6 mb-3">
+                <input type="number" class="form-control" id="numero1" for="floatingInput" placeholder="numero">
+                <label for="floatingInput" class="ms-2">Numero 1</label>
+            </div>
+            <div class="form-floating col-6">
+                <input type="number" class="form-control" id="numero2" onfocus="limpaErro()" for="floatingInput" placeholder="numero">
+                <label for="floatingInput" id="labelNumero2" class="ms-2">Numero 2</label>
+            </div>
+        </div>
+        <div class="row text-center p-2">
+            <div class="col" id="divBotaoSomar">
+                <button class="btn btn-outline-secondary p-2" id="inputSomar" onclick="somar()">Somar</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-secondary p-2" onclick="subtrair()">Subtrair</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-secondary p-2" onclick="multiplicar()">Multiplicar</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-secondary p-2" onclick="dividir()">Divisão</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-secondary p-2" onclick="limpar()">Limpar</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-secondary p-2" onclick="sumir()">Sumir</button>
+            </div>
+          
+
+        </div>
+            <div class="row mt-2">
+                <div class="form-floating  mb-3">
+                    <input type="number" class="form-control" disabled id="resultado" for="floatingInput" placeholder="numero">
+                    <label for="floatingInput"  id="labelResultado" class="ms-2">Resultado</label>
+                </div>
+                 <p class="text-danger" id="texto"></p>
+                
+            </div>
+    </div>
+
+
+    <!-- Não mexa abaixo -->
+    <script src="/scripts/matematica.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
